@@ -1,0 +1,99 @@
+@import url(navbar.css);
+@import url(blog-card.css);
+@import url(subscribe.css);
+@import url(footer.css);
+@import url(blog-post.css);
+@import url(contact.css);
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Delicious+Handrawn&family=Inter&family=Montserrat:wght@300&family=Poiret+One&display=swap");
+
+:root {
+  --black: #28282b;
+  --blue: #6699cc;
+  --dark-blue: #0b2447;
+  --light-blue: #b9d9eb;
+  --white: #f9f6ee;
+  --dark-grey: #696969;
+  --light-grey: #f0f0f0;
+}
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+}
+
+.body-section {
+  font-family: "Inter", sans-serif;
+}
+
+.main-section {
+  margin-top: 70px;
+}
+
+/* blog title */
+.blog-title {
+  margin: 20px 20px 0 20px;
+}
+
+.title {
+  font: 50px Poiret One, cursive;
+  text-align: center;
+}
+
+.tag-line {
+  font-family: "Delicious Handrawn", cursive;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.horizontal-line {
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgb(25, 55, 109),
+    rgba(0, 0, 0, 0)
+  );
+  border: 0;
+  height: 3px;
+}
+
+/* blog section */
+.blog-posts-section {
+  margin: 20px;
+}
+
+.main-heading {
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  margin: 0 20px 20px 20px;
+  padding-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container {
+  margin: 20px;
+  padding-bottom: 50px;
+}
+
+/* media queries for min-width 600px and 992px */
+@media only screen and (min-width: 600px) {
+  .container {
+    padding-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    display: grid;
+    gap: 5px 20px;
+    grid-template-columns: 45% 45%;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+}

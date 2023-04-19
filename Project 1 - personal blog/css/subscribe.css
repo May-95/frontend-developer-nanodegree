@@ -1,0 +1,35 @@
+/* subscribe form */
+.subscribe-form {
+  background-color: var(--light-blue);
+  padding-top: 10px;
+  text-align: center;
+}
+
+.subscribe-title {
+  font-size: 1em;
+  padding: 20px 10px 0;
+}
+
+.input-email {
+  border-radius: 5px;
+  border: 1px solid var(--dark-blue);
+  color: var(--dark-blue);
+  min-width: 210px;
+  padding: 5px 10px;
+}
+
+.input-email::placeholder {
+  color: var(--dark-blue);
+  letter-spacing: 0.5px;
+}
+
+.subscribe-button {
+  background-color: var(--blue);
+  border-radius: 10px;
+  border: 1px solid var(--dark-blue);
+  color: var(--white);
+  letter-spacing: 1px;
+  margin: 10px 5px;
+  min-height: 27px;
+  min-width: 100px;
+}

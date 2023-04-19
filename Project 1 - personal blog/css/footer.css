@@ -1,0 +1,29 @@
+/* footer */
+.footer {
+  background-color: var(--light-blue);
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  padding-bottom: 3px;
+}
+
+.fa-brands {
+  color: var(--black);
+}
+
+.fa-brands:hover {
+  color: var(--blue);
+}
+
+.copyright {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  margin-right: 20px;
+  padding: 10px;
+  text-transform: uppercase;
+}

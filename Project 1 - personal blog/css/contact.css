@@ -1,0 +1,68 @@
+/* contact form */
+.contact-form-container {
+  margin: 20px;
+  padding: 10px;
+}
+
+.contact-form {
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.label {
+  display: block;
+  padding-left: 3px;
+}
+
+.contact-input {
+  border-bottom: 2px solid var(--blue);
+  display: block;
+  margin-bottom: 30px;
+  min-height: 30px;
+  min-width: 100%;
+  padding-top: 10px;
+}
+
+.contact-textarea {
+  border-radius: 25px;
+  border: 2px solid var(--blue);
+  display: block;
+  margin: 10px 0 20px;
+  min-height: 30px;
+  min-width: 100%;
+  padding: 10px;
+}
+
+.contact-form-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 30px 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contact-button {
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  min-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.contact-textarea::placeholder {
+  color: var(--dark-grey);
+  letter-spacing: 0.5px;
+}
+
+/* media queries for min-width 600px */
+@media only screen and (min-width: 600px) {
+  .contact-form-container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 30px 40px 40px;
+  }
+}

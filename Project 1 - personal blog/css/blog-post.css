@@ -1,0 +1,154 @@
+/* blog post */
+.blog-img {
+  padding: 20px 0 10px;
+}
+
+.blog-heading {
+  font-size: 1.25rem;
+  padding: 20px 20px 10px 0;
+}
+
+.img-caption {
+  font-size: 0.75rem;
+}
+
+.blog-post-example {
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 40px 20px 0;
+  row-gap: 10px;
+}
+
+.blockquote {
+  background-color: var(--light-grey);
+  border-left: 5px solid var(--dark-grey);
+  margin: 20px;
+  padding: 20px;
+  font-size: 0.85rem;
+}
+
+.blog-post-title {
+  font-size: 1.56rem;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.blog-date {
+  color: var(--dark-grey);
+  display: block;
+  font-size: 0.81rem;
+  letter-spacing: 2px;
+  padding-bottom: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.blog-post-paragraph {
+  color: var(--black);
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+/* more blog items you might enjoy section */
+.more-blog-title {
+  font-size: 1.1rem;
+}
+
+.more-blog-titles {
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.more-blogs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 25px;
+  margin: 0 auto;
+}
+
+.more-blog-items:first-child {
+  padding: 20px 0 5px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.more-blog-items:not(:first-child) {
+  flex: 1;
+  font-size: 1.25rem;
+  max-width: 30%;
+  text-decoration: none;
+}
+
+.blog-links:link,
+.blog-links:visited,
+.blog-links:active {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.blog-links:hover {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+/* author section */
+.about-author {
+  padding: 20px 40px 40px;
+  text-align: center;
+}
+
+.about-me-heading {
+  font-size: 1.1rem;
+}
+
+.author-img {
+  padding: 20px;
+  width: 15rem;
+}
+
+.about-me-text {
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  padding: 10px 0;
+}
+
+/* media queries for min-width 600px and 992px */
+@media only screen and (min-width: 600px) {
+  .blog-post-example {
+    padding: 45px 45px 0 45px;
+  }
+
+  .about-author {
+    margin: 0 75px 75px;
+    padding: 0 50px;
+    text-align: center;
+  }
+
+  .author-img {
+    width: 18rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .blog-post-grid {
+    display: grid;
+    grid-template-columns: 65% 25%;
+    justify-content: space-evenly;
+    margin: 10px auto 30px;
+    max-width: 80%;
+    padding-top: 30px;
+  }
+
+  .blog-post-example {
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    row-gap: 10px;
+  }
+
+  .about-author {
+    margin: 0;
+    padding: 0;
+  }
+}
