@@ -34,6 +34,10 @@ html {
   text-underline-offset: 5px;
 }
 
+.active.section {
+  background-color: #d7e5d0;
+}
+
 /* media queries */
 @media only screen and (min-width: 480px) {
   .contact-section {

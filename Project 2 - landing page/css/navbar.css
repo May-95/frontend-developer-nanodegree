@@ -31,10 +31,6 @@ a:hover {
   color: #9dc08b;
 }
 
-.active.section {
-  background-color: #d7e5d0;
-}
-
 .active > a {
   color: #9dc08b;
   text-decoration-color: #9dc08b;
