@@ -100,16 +100,22 @@ back_button.addEventListener("click", back);
 // addEventListeners to the window to check for scrolling and add active class to the current section in view
 window.addEventListener("scroll", () => {
   let currentSection = "";
+  let currentActiveSection = "";
   // check which section is the currrent section. Loop through the sections and check if that section is in view and save it in currentSection if it is
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
     const sectionHeight = section.clientHeight;
+    section.classList.remove("active");
     if (scrollY >= sectionTop - sectionHeight / 3) {
       currentSection = section.getAttribute("id");
     }
   });
-  const navItem = document.querySelectorAll(".navbar__item");
+  // add an active class to the current section
+  currentActiveSection = document.getElementById(currentSection);
+  currentActiveSection.classList.add("active");
+
   // loop through nav items, remove the class active if it has it and add the class active if the nav item's classlist includes the currentSection's id
+  const navItem = document.querySelectorAll(".navbar__item");
   navItem.forEach((li) => {
     li.classList.remove("active");
     if (li.classList.contains(currentSection)) {
