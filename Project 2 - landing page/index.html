@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/0bc16dee82.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>LandscapeX</title>
+  </head>
+  <body>
+    <!-- header section containing the navigation for the page -->
+    <header>
+      <nav class="navbar__menu">
+        <ul id="navbar__list" class="navbar__list">
+          <!-- the javascript will load the nav items -->
+        </ul>
+      </nav>
+    </header>
+    <!-- main section of the page -->
+    <main>
+      <header class="welcome-section">
+        <div class="container">
+          <h1 class="welcome-title">London Landscaping Excellence!</h1>
+          <p class="welcome-paragraph">
+            LandscapeX is a leading landscaping business in London, UK,
+            providing quality garden design and landscaping services for
+            commercial and residential customers. With a team of experienced
+            designers and installers, we create beautiful outdoor spaces that
+            our customers love.
+          </p>
+          <a href="#section4" class="full-width">
+            <button class="button">Contact us</button>
+          </a>
+        </div>
+      </header>
+      <!-- section 1 - services -->
+      <section id="section1" data-section="1" class="section services-section">
+        <h2 class="section-title">Our Services</h2>
+        <div class="service-section">
+          <div class="service">
+            <img
+              src="./images/LawnCare.jpg"
+              alt="a garden bench with potted plants on it."
+              class="service-img"
+            />
+            <h3 class="service-title">Care</h3>
+            <p class="service-description">
+              A service that includes mowing, trimming, and edging lawns to keep
+              them looking neat and tidy.
+            </p>
+            <button class="more-button">more info</button>
+          </div>
+          <div class="service">
+            <img
+              src="./images/LandscapeDesign.jpg"
+              alt="plants beside pool with fountain"
+              class="service-img"
+            />
+            <h3 class="service-title">Design</h3>
+            <p class="service-description">
+              A service that incorporates aesthetics and functionality to create
+              an outdoor living space tailored to the customer's needs.
+            </p>
+            <button class="more-button">more info</button>
+          </div>
+          <div class="service">
+            <img
+              src="./images/LandscapeMaintenance.jpg"
+              alt="maintained lawn with sculptured hedges"
+              class="service-img"
+            />
+            <h3 class="service-title">Maintenance</h3>
+            <p class="service-description">
+              A service that includes pruning, weeding, and fertilising to keep
+              landscape looking healthy and attractive.
+            </p>
+            <button class="more-button">more info</button>
+          </div>
+        </div>
+      </section>
+      <!-- section 2 - reviews -->
+      <section id="section2" data-section="2" class="section review-section">
+        <h2 class="section-title">Reviews</h2>
+        <div class="review-container">
+          <button id="back" class="review-button"><</button>
+          <p class="review-text" id="review-text">
+            <!-- the javascript will load the reviews -->
+          </p>
+          <button id="forward" class="review-button">></button>
+        </div>
+        <p class="review-author" id="review-author">— Anna, London, UK</p>
+      </section>
+      <!-- section 3 - gallery -->
+      <section id="section3" data-section="3" class="section gallery-section">
+        <h2 class="section-title">Gallery</h2>
+        <div class="photo-section">
+          <img
+            class="service-img gallery-img"
+            src="./images/image1.jpg"
+            alt="green grass lawn near brown brick house"
+          />
+          <img
+            class="service-img gallery-img"
+            src="./images/image2.jpg"
+            alt="pink and purple flowers near green trees during daytime in front of a house"
+          />
+          <img
+            class="service-img gallery-img"
+            src="./images/image3.jpg"
+            alt="green grass field with fountain in the middle of it."
+          />
+          <img
+            class="service-img gallery-img"
+            src="./images/image4.jpg"
+            alt="white table with brown wicker chair beside plants"
+          />
+          <img
+            class="service-img gallery-img"
+            src="./images/image5.jpg"
+            alt="purple orchid flower in brown wooden hanging planter stand"
+          />
+          <img
+            class="service-img gallery-img"
+            src="./images/image6.jpg"
+            alt="potless plants on wooden bench"
+          />
+          <img
+            class="service-img gallery-img"
+            src="./images/image7.jpg"
+            alt="close up of the cactus garden in front of a white house"
+          />
+          <img
+            class="service-img gallery-img"
+            src="./images/image8.jpg"
+            alt="Ornamental botanical garden with gorgeous flowerbeds and landscaped hedges"
+          />
+        </div>
+      </section>
+      <!-- section 4 - contact form -->
+      <section id="section4" data-section="4" class="section contact-section">
+        <h2 class="section-title contact-title">Contact us</h2>
+        <div class="contact-container">
+          <div class="contact-intro">
+            <p class="contact-description">
+              Fill out this form to get in touch with LandscapeX for details
+              about our landscaping services.
+            </p>
+          </div>
+          <form action="#" class="form" id="form">
+            <label for="name" class="input-label">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="John Smith"
+              class="input-text"
+            />
+            <label for="email" class="input-label">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="input-text"
+              placeholder="abc@example.com"
+            />
+            <label for="message" class="input-label">Message:</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              class="input-message"
+            ></textarea>
+            <input
+              type="submit"
+              value="Send message"
+              class="send-button more-button"
+              id="submit"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- footer section with social media links and navigation to other pages -->
+    <footer class="footer">
+      <section class="social-links">
+        <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a href="www.youtube.com">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+        <a href="www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+      </section>
+      <section class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Team</a>
+        <a href="#">Contact</a>
+      </section>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
