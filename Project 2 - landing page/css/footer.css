@@ -1,0 +1,18 @@
+/* -- footer section -- */
+.footer {
+  align-items: center;
+  background-color: #1a281b;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 50px;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.social-links,
+.footer-links {
+  display: flex;
+  gap: 15px;
+}

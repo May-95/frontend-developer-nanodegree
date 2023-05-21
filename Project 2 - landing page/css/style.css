@@ -1,0 +1,132 @@
+@import url(./navbar.css);
+@import url(./welcome.css);
+@import url(./service.css);
+@import url(./reviews.css);
+@import url(./gallery.css);
+@import url(./contact.css);
+@import url(./footer.css);
+@import url("https://fonts.googleapis.com/css2?family=Ovo&family=Quattrocento+Sans&family=Quattrocento:wght@400;700&family=Inter:wght@400;500;600;700&family=Montserrat&family=Noto+Sans+JP&family=Patrick+Hand&display=swap");
+
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a {
+  color: white;
+}
+
+html {
+  height: 400px;
+  scroll-padding-top: 50px;
+  max-width: 100%;
+}
+
+.section-title {
+  font-family: "Ovo", serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  padding: 60px 20px 10px;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/* media queries */
+@media only screen and (min-width: 480px) {
+  .contact-section {
+    padding: 50px 20px;
+  }
+
+  .container {
+    max-width: 450px;
+  }
+
+  .navbar__list {
+    font-size: 11px;
+    gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .service-section {
+    flex-direction: row;
+  }
+
+  .container {
+    max-width: 450px;
+  }
+
+  .navbar__list {
+    font-size: 12px;
+    gap: 30px;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .footer {
+    font-size: 1.1rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .photo-section {
+    flex-direction: row;
+  }
+
+  .navbar__list {
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .footer {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .gallery-img {
+    max-width: 300px;
+  }
+
+  .navbar__list {
+    font-size: 16px;
+  }
+
+  .contact-description {
+    font-size: 17px;
+  }
+
+  .contact-container {
+    flex-direction: row;
+    gap: 50px;
+    max-width: 1000px;
+  }
+
+  .input-label {
+    font-size: 16px;
+  }
+  .send-button {
+    font-size: 1.1rem;
+    height: 50px;
+  }
+
+  .review-text {
+    font-size: 1.2rem;
+  }
+
+  .review-author {
+    font-size: 1rem;
+  }
+
+  .container {
+    max-width: 600px;
+  }
+}

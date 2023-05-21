@@ -1,0 +1,40 @@
+/* -- section 2: reviews -- */
+.review-section {
+  align-items: stretch;
+  background-color: #99bd9d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 70vh;
+  padding-bottom: 80px;
+}
+
+.review-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 50px 40px;
+}
+
+.review-button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+.review-text {
+  font-family: Montserrat;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  margin: 0 25px;
+  max-width: 500px;
+}
+
+.review-author {
+  font-family: Montserrat;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+}

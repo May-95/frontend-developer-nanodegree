@@ -1,0 +1,77 @@
+/* -- section 1: services -- */
+.services-section {
+  background-color: #bdd5c1;
+  min-height: 70vh;
+  padding: 50px 0;
+}
+
+.service-section {
+  align-content: center;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+  height: auto;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 20px 20px 50px;
+}
+
+.service {
+  background-color: rgba(64, 81, 59, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: flex;
+  flex-basis: 35.33%;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  max-height: 380px;
+  max-width: 300px;
+  min-height: 200px;
+  padding: 21px;
+  text-align: center;
+}
+
+.service-img {
+  border-radius: 10px;
+  height: 220px;
+  max-width: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+  width: 400px;
+}
+
+.service-title {
+  flex-grow: 1;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.service-description {
+  flex-grow: 1;
+  font-family: Montserrat;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.more-button {
+  align-items: center;
+  background-color: #1b4d3e;
+  border-radius: 9px;
+  border: none;
+  color: white;
+  display: flex;
+  font-family: "Ovo", serif;
+  font-size: 0.9rem;
+  justify-content: center;
+  margin: 10px auto 0;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.more-button:hover {
+  color: #9dc08b;
+}

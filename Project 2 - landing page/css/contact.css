@@ -1,0 +1,82 @@
+/* -- section 4: contact -- */
+.contact-section {
+  background-color: #99bd9d;
+  padding: 50px 0;
+}
+
+.contact-title {
+  color: black;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 20px 30px 50px;
+}
+
+.contact-intro {
+  color: black;
+  flex-basis: 30%;
+}
+
+.contact-description {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  line-height: 1.2rem;
+}
+
+.form {
+  display: flex;
+  flex-basis: 60%;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.input-label {
+  color: black;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.input-text {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  border: 1.5px solid #434a42;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  height: 30px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+.input-text::placeholder {
+  color: #696969;
+}
+
+.input-message {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  border: 1.5px solid #434a42;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 5px;
+  text-indent: 5px;
+}
+
+.send-button {
+  border-radius: 5px;
+  border: 1.5px solid black;
+  color: white;
+  font-family: "Ovo", serif;
+  font-size: 0.9rem;
+  height: 40px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  width: 60%;
+}
