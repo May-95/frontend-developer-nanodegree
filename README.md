@@ -9,3 +9,7 @@ This repository contains projects completed as part of Udacity's Front End Web D
 - **Project 1** - [Personal Blog Website](https://github.com/May-95/nanodegree-projects/tree/main/Project%201%20-%20personal%20blog)
 
    - [Live Preview](https://may-95.github.io/nanodegree-projects/Project%201%20-%20personal%20blog)
+
+- **Project 2** - [Landing Page](https://github.com/May-95/nanodegree-projects/tree/main/Project%202%20-%20landing%20page)
+
+   - [Live Preview](https://may-95.github.io/nanodegree-projects/Project%202%20-%20landing%20page/)
