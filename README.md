@@ -13,3 +13,5 @@ This repository contains projects completed as part of Udacity's Front End Web D
 - **Project 2** - [Landing Page](https://github.com/May-95/nanodegree-projects/tree/main/Project%202%20-%20landing%20page)
 
    - [Live Preview](https://may-95.github.io/nanodegree-projects/Project%202%20-%20landing%20page/)
+
+- **Project 3** - [Weather Journal App](https://github.com/May-95/nanodegree-projects/tree/main/Project%203%20-%20weather%20journal)
