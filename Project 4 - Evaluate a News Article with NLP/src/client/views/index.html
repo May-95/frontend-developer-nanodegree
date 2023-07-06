@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evaluate with NLP</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <main class="main-content">
+      <section class="form-section">
+        <h1 class="title">Sentiment <span class="highlight">Analysis</span></h1>
+        <p class="introduction">
+          Evaluate text or a webpage using Natural Language Processing. Enter the
+          text or the webpage's url that you wish to analyse.
+        </p>
+        <form>
+          <label for="text-url"
+            ><input
+              type="text"
+              name="text-url"
+              class="input-field"
+              placeholder="enter text or a url"
+          /></label>
+          <label for="button"
+            ><input type="submit" name="button" class="button" value="submit"
+          /></label>
+        </form>
+      </section>
+      <section id="result-section" class="result-section">
+        <h3 class="result-heading">Analysis result:</h3>
+        <div id="results">
+          <div id="text" class="result-container">
+            <p class="result-category" id="text-url"></p>
+          </div>
+          <div id="type" class="result-container">
+            <p class="result-category">Type:</p>
+          </div>
+          <div id="polarity" class="result-container">
+            <p class="result-category">Polarity:</p>
+          </div>
+          <div id="subjectivity" class="result-container">
+            <p class="result-category">Subjectivity:</p>
+          </div>
+          <div id="agreement" class="result-container">
+            <p class="result-category">Agreement:</p>
+          </div>
+          <div id="confidence" class="result-container">
+            <p class="result-category">Confidence:</p>
+          </div>
+          <div id="irony" class="result-container">
+            <p class="result-category">Irony:</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
