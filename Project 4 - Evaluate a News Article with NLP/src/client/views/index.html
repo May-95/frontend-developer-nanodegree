@@ -4,55 +4,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evaluate with NLP</title>
-    <link rel="stylesheet" href="../styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/0bc16dee82.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main class="main-content">
+      <!-- form section of the page -->
       <section class="form-section">
         <h1 class="title">Sentiment <span class="highlight">Analysis</span></h1>
         <p class="introduction">
-          Evaluate text or a webpage using Natural Language Processing. Enter the
-          text or the webpage's url that you wish to analyse.
+          Evaluate text excerpts or an article using Natural Language
+          Processing. Enter the text or the URL of the article you wish to
+          analyse.
         </p>
-        <form>
+        <form id="form" method="POST" action="localhost:8081/analyse">
+          <p class="error-msg" id="error"></p>
           <label for="text-url"
             ><input
               type="text"
               name="text-url"
+              id="text-url"
               class="input-field"
               placeholder="enter text or a url"
           /></label>
           <label for="button"
-            ><input type="submit" name="button" class="button" value="submit"
+            ><input
+              type="submit"
+              name="button"
+              id="button"
+              class="button"
+              value="submit"
+              onclick="return Client.onSubmit(event)"
+              onsubmit="return Client.onSubmit(event)"
           /></label>
         </form>
       </section>
+      <!-- result section, shown after a sucessful API call -->
       <section id="result-section" class="result-section">
         <h3 class="result-heading">Analysis result:</h3>
         <div id="results">
-          <div id="text" class="result-container">
-            <p class="result-category" id="text-url"></p>
+          <div class="result-container">
+            <p id="type" class="result-category"></p>
+            <p id="input"></p>
           </div>
-          <div id="type" class="result-container">
-            <p class="result-category">Type:</p>
-          </div>
-          <div id="polarity" class="result-container">
+          <div class="result-container">
             <p class="result-category">Polarity:</p>
+            <p id="polarity"></p>
           </div>
-          <div id="subjectivity" class="result-container">
+          <div class="result-container">
             <p class="result-category">Subjectivity:</p>
+            <p id="subjectivity"></p>
           </div>
-          <div id="agreement" class="result-container">
+          <div class="result-container">
             <p class="result-category">Agreement:</p>
+            <p id="agreement"></p>
           </div>
-          <div id="confidence" class="result-container">
+          <div class="result-container">
             <p class="result-category">Confidence:</p>
+            <p id="confidence"></p>
           </div>
-          <div id="irony" class="result-container">
+          <div class="result-container">
             <p class="result-category">Irony:</p>
+            <p id="irony"></p>
           </div>
         </div>
       </section>
     </main>
+    <script>
+      // Check that service workers are supported
+      if ("serviceWorker" in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/service-worker.js");
+        });
+      }
+    </script>
   </body>
 </html>
