@@ -1,0 +1,44 @@
+.form-section {
+  padding: 35px;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+}
+
+.input-field {
+  border: 1.5px solid black;
+  border-radius: 5px;
+  display: block;
+  padding: 5px;
+  text-indent: 5px;
+  width: 100%;
+
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+.button {
+  background-color: $button;
+  border: 0;
+  border-radius: 10px;
+  height: 30px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  width: 70%;
+}
+
+.error-msg {
+  color: red;
+  display: flex;
+  display: none;
+  font-size: 12px;
+  gap: 5px;
+  padding: 0 10px 10px;
+}
+
+.material-symbols-outlined {
+  max-height: 60%;
+}
