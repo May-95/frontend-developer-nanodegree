@@ -17,3 +17,6 @@ This repository contains projects completed as part of Udacity's Front End Web D
 - **Project 3** - [Weather Journal App](https://github.com/May-95/nanodegree-projects/tree/main/Project%203%20-%20weather%20journal)
 
 - **Project 4** - [Evaluate a News Article with Natural Language Processing](https://github.com/May-95/nanodegree-projects/tree/main/Project%204%20-%20Evaluate%20a%20News%20Article%20with%20NLP)
+
+## Certificate
+![screenshot](https://github.com/May-95/nanodegree-projects/blob/main/certificate.png)
